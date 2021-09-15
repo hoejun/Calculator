@@ -2,6 +2,7 @@ import Big from "big.js";
 
 import operate from "./operate";
 import isNumber from "./isNumber";
+// import {isNumber} from "./isNumber"; export default가 아니라 export를 할시 {}안에 작성
 
 /**
  * Given a button name and a calculator data object, return an updated
@@ -13,6 +14,7 @@ import isNumber from "./isNumber";
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
+  console.log(buttonName)
   if (buttonName === "AC") {
     return {
       total: null,
